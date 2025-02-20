@@ -1,0 +1,9 @@
+Django==5.1.2
+djangorestframework
+django-crispy-forms
+gunicorn
+psycopg2-binary
+whitenoise
+dj-database-url
+python-decouple
+gender-guesser==0.4.0
