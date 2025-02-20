@@ -1,0 +1,53 @@
+<!-- filepath: /c:/Users/Allan N/OneDrive/Documentos/practice/guess game/guess_game/game/templates/game/result.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Gender Result</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: azure;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            color: #333;
+            background: rgb(64, 100, 232);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        #ans {
+            background: rgb(197, 67, 199);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        #link {
+            padding: 10px 20px;
+            background-color: #0db52c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body class="result">
+    <div class="container">
+        <h1>Guess Name Result</h1>
+        <p>Name: {{ name }}</p>
+        <p>Gender: {{ gender }}</p>
+        <p id="ans">Fact: {{ fact }}</p>
+        <a  id="link" href="{% url 'index' %}">Try Again</a>
+    </div>
+</body>
+</html>
